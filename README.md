@@ -1,8 +1,22 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/HNm_Jrs1)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=11031936&assignment_repo_type=AssignmentRepo)
-# Coding Assignment 1: Naive Bayes classifier with bag-of-words model, Logistic regression models and Perceptron.
+# StatisticalLearningModel_Implementation
 
 ## Introduction
+This repository is a display of my learning journey and accomplishments in the 2023 Spring EC4213 Course, covering Statistical Learning topics.
+
+
+## Contents
+- Naive Bayes Spam Filter
+- Logistic Regression with gradient ascent optimizer
+- Logistic Regression with stochastic gradient ascent optimizer
+- Perceptron
+- A Report Comparing the Performance of Models from Scikit-Learn with My Models and Analyzing the Differences
+
+
+
+# Original Readme file from course
+## Coding Assignment 1: Naive Bayes classifier with bag-of-words model, Logistic regression models and Perceptron.
+
+### Introduction
 
 The first coding assignment asks you to implement three classification models given dataset.
 
@@ -15,17 +29,17 @@ We provide the code consisting of several Python files, which you will need to r
 
 **Note**: we will use `Python 3.x` for the project. 
 
-## Deadline
+### Deadline
 May 10, 2023 11:59PM KST (*Late Submission not allowed*)
 
-### Submission checklist
+#### Submission checklist
 * Push your code to [our github classroom page's CA1 section](https://classroom.github.com/a/HNm_Jrs1)
 * Submit your report to [LMS](https://lms.gist.ac.kr)
 
 ---
-## Preparation
+### Preparation
 
-### Installing prerequisites
+#### Installing prerequisites
 
 The prerequisite usually refers to the necessary library that your code can run with. They are also known as `dependency`. To install the prerequisite, simply type in the shell prompt (not in a python interpreter) the following:
 
@@ -34,7 +48,7 @@ $ pip install -r requirements.txt
 ```
 
 ---
-## Files
+### Files
 
 **Files you'll make:**
 
@@ -45,25 +59,25 @@ $ pip install -r requirements.txt
 * `util.py`: A bunch of utility functions!
 
 ---
-## What to submit
+### What to submit
 **Push to your github classroom** 
 
 - All of the python files listed above (under "Files you'll edit"). 
 - `report.pdf` file that answers all the written questions in this assignment (denoted by `"REPORT#:"` in this documentation).
 
 ---
-### Note
+#### Note
 **Academic dishonesty:** We will be checking your code against other submissions in the class for logical redundancy. If you copy someone else's code and submit it with minor changes, we will know. These cheat detectors are quite hard to fool, so please don't try. We trust you all to submit your own work only; please don't let us down. If you do, we will pursue the strongest consequences available to us.
 
 ---
-## Prepare the dataset for text classification (5%)
+### Prepare the dataset for text classification (5%)
 
 **For Naive Bayes classifier**, using provided 'data.zip' file, build training data for SPAM/HAM emails.
 
 
 
 --
-## Implementation of the Naive Bayes classifier for SPAM/HAM email text classification (using Bag-of-words model) (40%)
+### Implementation of the Naive Bayes classifier for SPAM/HAM email text classification (using Bag-of-words model) (40%)
 **1. Text preprocessing: Turn the text content into numerical feature vectors and compute frequencies (10%)**
 
 For this text preprocessing, you can use 'scikit-learn' package as follows:
@@ -85,7 +99,7 @@ After training, predict an email in 'mytest' directory.
 
  
  ---
-## Prepare the dataset for Logistic regression and perceptron (5%)
+### Prepare the dataset for Logistic regression and perceptron (5%)
 
 **For Logistic regressions**, use 'sklearn` package and 'Iris' dataset. 
 
@@ -102,7 +116,7 @@ Divide this dataset into two groups: train set (tr_x, tr_y) and validation set (
  
  
 ---
-## Logistic Regression Model (Gradient ascent algorithm) (10%)
+### Logistic Regression Model (Gradient ascent algorithm) (10%)
 
 You can now implement the logistic regression model to predict the class (`y`) with the input data (`x`).
 
@@ -120,7 +134,7 @@ You can now implement the logistic regression model to predict the class (`y`) w
 
 
 ---
-## Logistic Regression Model (Stochastic gradient ascent algorithm) (10%)
+### Logistic Regression Model (Stochastic gradient ascent algorithm) (10%)
 
 You can now implement the logistic regression model to predict the class (`y`) with the input data (`x`).
 
@@ -137,7 +151,7 @@ You can now implement the logistic regression model to predict the class (`y`) w
 `REPORT3`: Report the error of your logistic regression model and draw the decision boundary using the first two features. Using the `eta` you found from `REPORT4`, run with different numbers of `iterations`, plot a graph (x-axis: eta, y-axis: acc) and discuss the effect of the number of iterations.
 
 ---
-## Regularized Logistic Regression (MCAP) Model (Stochastic gradient ascent algorithm) (10%)
+### Regularized Logistic Regression (MCAP) Model (Stochastic gradient ascent algorithm) (10%)
 
 You can now implement the regularized logistic regression model to predict the class (`y`) with the input data (`x`).
 
@@ -156,7 +170,7 @@ You can now implement the regularized logistic regression model to predict the c
 
 
 ---
-## Perceptron (10%)
+### Perceptron (10%)
 
 You can now implement the perceptron to predict the class (`y`) with the input data (`x`).
 
@@ -176,7 +190,7 @@ You can now implement the perceptron to predict the class (`y`) with the input d
 
 
 ---
-## Compare your implementations with `scikit-learn` library (20%)
+### Compare your implementations with `scikit-learn` library (20%)
 
 In [scikit-learn library](https://scikit-learn.org/), there are all implementation of what you have implemented
 1. [naive bayes text classifier](https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html)
